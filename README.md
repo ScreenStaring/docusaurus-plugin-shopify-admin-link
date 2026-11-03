@@ -1,6 +1,8 @@
 # docusaurus-plugin-shopify-admin-link
 
-A Docusaurus plugin that links to pages in the viewer's Shopify Admin.
+[![CI](https://github.com/ScreenStaring/docusaurus-plugin-shopify-admin-link/actions/workflows/ci.yml/badge.svg)](https://github.com/ScreenStaring/docusaurus-plugin-shopify-admin-link/actions/workflows/ci.yml)
+
+Docusaurus plugin that links to pages in the viewer's Shopify Admin.
 
 The viewer's shop domain is read from a query string parameter, saved as a cookie, and used by the `ShopifyAdminLink` component to build links to the Shopify Admin.
 If no query string parameter is given the text is rendered without a link. Links are built using the [shopify-url package](https://github.com/ScreenStaring/shopify-url).
