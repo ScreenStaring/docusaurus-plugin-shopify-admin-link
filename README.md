@@ -4,8 +4,10 @@
 
 Docusaurus plugin that links to pages in the viewer's Shopify Admin.
 
-The viewer's shop domain is read from a query string parameter, saved as a cookie, and used by the `ShopifyAdminLink` component to build links to the Shopify Admin.
-If no query string parameter is given the text is rendered without a link. Links are built using the [shopify-url package](https://github.com/ScreenStaring/shopify-url).
+The viewer's Shopify domain is read from a query string parameter, saved as a cookie, and used by the `ShopifyAdminLink` component to build links to their
+Shopify Admin. If no parameter is given the text is rendered without the link.
+
+Links are built using the [shopify-url package](https://github.com/ScreenStaring/shopify-url).
 
 ## Install
 
