@@ -1,0 +1,45 @@
+{
+  "name": "docusaurus-plugin-shopify-admin-link",
+  "version": "0.0.1",
+  "description": "Docusaurus plugin that links documentation to the reader's Shopify Admin",
+  "keywords": [
+    "docusaurus",
+    "docusaurus-plugin",
+    "shopify",
+    "shopify-admin"
+  ],
+  "license": "ISC",
+  "author": "Skye Shaw <skye.shaw@gmail.com>",
+  "homepage": "https://github.com/ScreenStaring/docusaurus-plugin-shopify-admin-link",
+  "bugs": {
+    "url": "https://github.com/ScreenStaring/docusaurus-plugin-shopify-admin-link/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScreenStaring/docusaurus-plugin-shopify-admin-link.git"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "src"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20.0"
+  },
+  "peerDependencies": {
+    "@docusaurus/core": ">=3.0.0",
+    "react": ">=18.0.0"
+  },
+  "dependencies": {
+    "js-cookie": "^3.0.8",
+    "shopify-url": "^0.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.7",
+    "@babel/preset-env": "^7.29.7",
+    "@babel/preset-react": "^7.29.7"
+  }
+}
