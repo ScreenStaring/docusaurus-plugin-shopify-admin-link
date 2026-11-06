@@ -61,20 +61,29 @@ import ShopifyAdminLink from '@theme/ShopifyAdminLink';
 
 Then generate some links. For example, to link to the Themes page in the Shopify Admin:
 ```mdx
-Go to <ShopifyAdminLink href={(shopify) => shopify.themes()}>your Themes</ShopifyAdminLink> and do something
+Go to
+<ShopifyAdminLink href={(shopify) => shopify.themes('current')}>
+  your current theme
+</ShopifyAdminLink>
+and do something
 ```
 
 Or, to link to the orders page:
 
 ```mdx
-Checkout <ShopifyAdminLink href={(shopify) => shopify.orders()}>your orders</ShopifyAdminLink>
+Checkout
+<ShopifyAdminLink href={(shopify) => shopify.orders()}>
+  your orders
+</ShopifyAdminLink>
 ```
 
 The function receives a [`shopify-url`](https://github.com/ScreenStaring/shopify-url) `Admin` instance.
 
 You can also pass a string path, which is resolved relative to the shop's Admin URL:
 ```mdx
-<ShopifyAdminLink href="/settings/shipping/order_routing">Shopify Order Routing</ShopifyAdminLink>
+<ShopifyAdminLink href="/settings/shipping/order_routing">
+  Shopify Order Routing
+</ShopifyAdminLink>
 ```
 
 The leading slash is optional, so both `href="orders"` and `href="/orders"` link to `https://SHOP.myshopify.com/admin/orders`.
